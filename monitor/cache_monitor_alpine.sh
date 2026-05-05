@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # usage: bash cache_monitor_alpine.sh <file>
-# note: must run as root or with --privileged in Docker
+# note: must run as root or with in Docker
 set -euo pipefail
 F="${1:?file required}"
 INO=$(stat -c '%i' "$F")
