@@ -6,4 +6,6 @@ RUN apk add --no-cache bpftrace gcc musl-dev wget \
     && rm /tmp/vmtouch.c \
     && apk del gcc musl-dev wget
 
+COPY monitor /monitor
+
 CMD ["/bin/sh"]
